@@ -1,0 +1,830 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GERAIS */
+body {
+    background-color: #1A7FBD;
+    font-family: "Hanken Grotesk", sans-serif;
+    width: 100%;    
+}
+
+.container {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CABEÇALHO */
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 175px;
+    height: 35px;
+}
+
+.menu-nav {
+    list-style: none;
+    display: flex;
+}
+
+.menu-nav li {
+    margin-right: 51px;
+}
+
+.menu-nav li a {
+    text-decoration: none; 
+    color: #FFF; 
+    font-size: 16px; 
+    font-weight: 500; 
+    transition: color 0.3s ease;
+}
+    
+.menu-nav li a:hover {
+    color: #CECECE;
+}
+
+.btn-primary {
+    background-color: #000; 
+    width: 159px; 
+    height: 43px; 
+    color: #FFF; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: 700; 
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #161616;
+}
+
+.header-line {
+    display: block; 
+    width: 120%; /* Faz com que a imagem ocupe 120% da largura do container */   
+    margin-left: -10%; 
+    margin-right: -10%; 
+}
+
+
+/* *** SEÇÃO FORMULÁRIO *** */
+
+#form-section {
+    padding: 40px 20px;
+    margin-bottom: 20px; 
+    padding: 90px 0; /* Preenchimento */
+    background-image: url(/image/banner.png); /* Imagem de fundo */
+    background-position: right -172% top -38px; /* Posição da imagem de fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+}
+
+.form-wrapper {
+    display: flex; /* Container flexível */
+    justify-content: flex-end; /* Justificar conteúdo para flex-end */
+}
+
+#registration {
+    width: 38%; /* Largura */
+    margin-top: 40px; /* Margem superior */
+    margin-bottom: 75px;
+}
+
+#registration .top-right-img {
+    position: absolute;
+    top: 205px;
+    right: 145px;
+}
+
+#registration .bottom-left-img {
+    position: absolute;
+    top: 225px;
+    left: 780px;
+   
+}
+.registration-form {
+    width: 405px; /* Largura */
+    height: 729px; /* Altura */
+    background-color: #FFF; /* Cor de fundo */
+    border: solid 1px #58C5E6; /* Borda */
+    border-radius: 12px; /* Raio da borda */
+}
+
+.registration-form h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #CECECE;
+    margin: 32px 14px auto 39px;
+}
+
+.form-group {
+    width: 356px;
+    height: 173px;
+    margin: 14px 24px 32px 25px;
+}
+
+.form-group h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A7FBD;
+    margin-left: 14px;
+    margin-bottom: 16px;
+}
+
+/* CUSTOMIZAÇÃO DOS INPUTS (NOME, E-MAIL) */
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px; /* Espaço entre os campos */
+}
+
+.input-group input {
+    width: 356px; /* Largura */
+    height: 40px; /* Altura */
+    border-radius: 6px; /* Raio da borda */
+    border: solid 1px #CECECE; /* Borda */
+    padding-left: 30px; /* Espaço para a imagem */
+    padding-right: 25px; /* Espaço para o asterisco */
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: #A0A0A0; /* Cor do placeholder */
+}
+
+.input-group img {
+    position: absolute;
+    left: 5px; /* Posição da imagem */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+
+/* Estilo individual para cada asterisco */
+#asterisk-nome {
+    position: absolute;
+    color: #1A7FBD; /* Cor do asterisco */
+    top: 50%;
+    right: 215px; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+#asterisk-email {
+    position: absolute;
+    color: #1A7FBD; /* Cor do asterisco */
+    top: 50%;
+    right: 275px; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.input-group input:focus + .asterisk,
+.input-group input:not(:placeholder-shown) + .asterisk {
+    visibility: hidden; /* Torna o asterisco invisível ao focar ou ao preencher */
+}
+
+/* CUSTOMIZAÇÃO DO SELECT (ESTADO) */
+
+.select-group {
+    position: relative;
+    display: inline-block;
+    width: 356px; /* Largura do select */
+    margin-bottom: 15px; /* Espaço entre os campos */
+}
+
+.select-group select {
+    color: #A0A0A0;
+    width: 100%; /* Largura total do select */
+    height: 40px; /* Altura */
+    border-radius: 6px; /* Raio da borda */
+    border: solid 1px #CECECE; /* Borda */
+    padding-left: 30px; /* Espaço para a imagem */
+    padding-right: 25px; /* Espaço para o asterisco */
+    font-size: 14px;
+    appearance: none; 
+    background-image: url('/image/icon/blue-arrow.svg'); /* Sua imagem SVG */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.select-group img {
+    position: absolute;
+    left: 5px; /* Ajuste conforme necessário */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    pointer-events: none; /* Evita que a imagem interfira na seleção do select */
+}
+
+/* Estilo do asterisco para o select */
+.select-group .asterisk {
+    position: absolute;
+    color: #1A7FBD; /* Cor do asterisco */
+    top: 50%;
+    right: 270px; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    font-size: 18px;
+    visibility: visible; /* O asterisco deve ser visível por padrão */
+}
+.select-group .asterisk.hidden {
+    visibility: hidden; /* O asterisco deve estar escondido quando necessário */
+}
+
+/* CUSTOMIZAÇÃO DOS CHECHBOXS (TECNOLOGIAS) */
+
+.checkbox-content {   
+    height: 170px;
+    background-color: #1A7FBD;
+}
+
+.checkbox-form {
+    width: 358px;
+    height: 118px;
+    padding: 20px 0 0 20px;   
+}
+
+.checkbox-form h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #FFF;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: first baseline;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFF;
+    gap: 8px;
+}
+
+.control {
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    margin-left: 6px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #1A7FBD;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #FFF;
+}
+  
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.control + .control {
+    margin-top: 1em
+}
+
+/* CUSTOMIZAÇÃO DO RADIO (EXPERIÊNCIA) */
+
+
+.radius-content {
+    margin: 30px auto 15px 40px;
+}
+
+.radius-form h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A7FBD;
+}
+
+.radius-form input {
+    margin-top: 16px;
+}
+
+.radius-form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #A0A0A0;
+}
+
+.radius-option {
+    display: inline-block;
+    margin-right: 25px; /* Adicione um espaço entre os radios, se desejar */
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #1A7FBD;
+    background-color: transparent;
+    border-radius: 3px; /* Bordas arredondadas */
+    cursor: pointer;
+    position: relative; /* Adicione position: relative para posicionar o marcador interno */
+}
+
+input[type="radio"]::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+    border: 1px solid #1A7FBD; /* Cor do quadrado interno */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease; /* Transição suave */
+    opacity: 0; /* Esconde o quadrado interno por padrão */
+}
+
+input[type="radio"]:checked::before {
+    opacity: 1; /* Mostra o quadrado interno quando marcado */
+    background-color: #1A7FBD; /* Cor do quadrado interno quando marcado */
+}
+
+.decorative-image {
+    position: absolute;
+    right: 0; /* Ajuste conforme necessário */
+    top: 415px;
+    z-index: -1; /* Para que fique atrás de outros elementos, se necessário */
+}
+
+.observation {
+    margin: 0 24px 0 24px;
+}
+
+.observation p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1A7FBD;
+    margin-top: 10px;
+    margin-left: 110px;
+}
+
+.btn-submit {
+    margin: 25px 25px 10px 25px;
+}
+
+.btn-submit button {
+    width: 356px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #1A7FBD;
+    border-radius: 6px;
+    border: solid 1px #1A7FBD;
+}
+
+.rules {
+    width: 272px;
+    height: 24px;
+    margin-left: 65px;
+}
+
+.rules p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #9A9A9A;
+    text-align: center;
+}
+
+.rules p span {
+   color: #1A7FBD;
+}
+
+
+/* *** SEÇÃO PROJETO *** */
+
+#project-section {
+    height: 558px;
+}
+
+#project {
+    display: flex;
+    align-items: center;
+}
+
+.developer {
+    width: 515px;
+    height: 461px;
+    margin-right: 55px;    
+}
+
+.project-text {
+    margin-left: 20px;
+}
+
+.project-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #A4DCFF;
+    margin-bottom: 20px;
+}
+
+.project-text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.project-text span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF; 
+}
+
+/* *** SEÇÃO PROBLEMA *** */
+
+#problem-section {
+    position: relative; /* Necessário para posicionamento absoluto dos elementos filhos */
+    padding: 40px 20px; 
+    background-color: #FFF;
+}
+
+.img-area,
+.content-text {
+    display: inline-block;
+    vertical-align: top;
+    position: relative; /* Necessário para que os elementos dentro deles possam ser posicionados relativamente */
+}
+
+.img-area {
+    width: 50%;
+    margin-right: 70px;
+}
+
+.content-text {
+    width: 40%;
+    margin-top: 130px;
+}
+
+.senior {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    margin-top: 20px;
+}
+
+.text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #1A7FBD,  #6CBFF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sub-text p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.sub-text span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box {
+    position: absolute; /* Posicionamento absoluto para sobrepor a imagem e o texto */
+    top: 730px;
+    margin-top: -100px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.box div {
+    padding: 35px;
+    margin-left: 5px;
+    width: 327px;
+    height: 228px;
+    border: solid 1px #E8E8E8;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    background-color: #FFF; /* Adiciona fundo branco para destacar os boxes */
+}
+
+.box div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.box div p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.box-1 {
+    background-image: url(/image/vetor/1.svg);
+    background-repeat: no-repeat;
+    background-position: center calc(0% + 20px);
+}
+
+.box-2 {
+    background-image: url(/image/vetor/2.svg);
+    background-repeat: no-repeat;
+    background-position: center calc(0% + 20px);
+}
+
+.box-3 {
+    background-image: url(/image/vetor/3.svg);
+    background-repeat: no-repeat;
+    background-position: center calc(0% + 20px);
+}
+
+
+
+/* *** SEÇÃO JORNADA *** */
+
+#journey-section {
+    padding: 185px 20px 0 20px;
+    background-color: #FFF;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    width: 120%;
+    
+}
+
+.title h1{
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(to right, #1A7FBD,  #6CBFF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.box-smaller {    
+    width: 992px;
+    height: 170px;
+}
+
+.group-box {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.group-box .smaller {
+    width: 320px;
+    height: 77px;
+    background-color: #1A7FBD;
+    border: solid 1px #E8E8E8;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.smaller div {
+    width: 51px;
+    height: 51px;
+    background-color: #FFF;
+    margin: 12px 6px 12px 12px;
+    border-radius: 8px;
+}
+
+.smaller div img {
+    width: 25px;
+    height: 25px;
+    margin: 12px;
+}
+
+.smaller {
+    display: flex;
+    align-items: center;
+}
+
+.smaller p {
+    flex: 1; /* Isso faz com que o parágrafo ocupe o espaço restante */
+    font-size: 16px;
+    font-weight: 500;
+    margin: 12px;
+}
+
+.btn-large {
+    margin: 115px 0 18px 250px;
+}
+
+.btn-large button {
+    width: 459px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: #000;
+    border: none;   
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;   
+    padding: 10px 20px;
+   
+}
+
+.btn-large button p {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+.btn-large button span {
+    color: #1A7FBD;
+    margin-right: 5px;
+}
+
+.btn-large button img {
+    width: 24px;
+    height: 24px;
+}
+
+.brush {
+    margin: auto 0 162px 370px;
+}
+
+/* *** SEÇÃO OBJETIVOS *** */
+
+#goals-section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+#goals h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.box-obj {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.box-obj div {
+    padding: 35px;
+    margin-left: 5px;
+    width: 327px;
+    height: 228px;
+    border: solid 1px #75C4F5;
+    border-radius: 12px;
+    background-color: #FFF;
+    text-align: center;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+
+.box-obj div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.box-obj div p {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+/* ***** FOOTER ***** */
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 60px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-slogan img {
+    width: 187px;
+    height: 57px;
+    margin-bottom: 15px;
+    margin-right: 80px;
+}
+
+.social-icons img {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.copyright p {
+    font-size: 9px;
+    font-weight: 500;
+    color: #B9B9B9;
+}
+
+
+.btn-invertido {
+    background-color: #FFF; 
+    width: 159px; 
+    height: 43px; 
+    color: #000; 
+    border: 1px solid; 
+    border-color: #1A7FBD;
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: 700; 
+    transition: background-color 0.3s ease;
+    
+}
+
+.column-3 ul {
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+.column-3 ul li a {
+    text-decoration: none; /* Remove a decoração de texto */
+    border-bottom: none; /* Remove a linha tracejada */
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-invertido:hover {
+    background-color: #f0e9e9;
+}
+
+.column-3 ul li,
+ .column-5 p {
+    margin-bottom: 15px; /* Altere o valor conforme necessário */
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #58C5E6;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Torna o botão redondo */
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    display: flex; /* Usado para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 24px; /* Tamanho da fonte para o ícone */
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #1A7FBD;
+}
+
+

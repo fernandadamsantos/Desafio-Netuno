@@ -1,0 +1,613 @@
+/* Media Query para telas de 992px ou menores */
+@media (max-width: 992px) {
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    
+    .menu-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    
+    .menu-nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .header-line {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #form-section {
+        padding: 40px 10px;
+        background-position: center center;
+    }
+    
+    .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #registration {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #registration .top-right-img,
+    #registration .bottom-left-img {
+        position: static;
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .registration-form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .form-group {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .input-group input,
+    .select-group select {
+        width: 100%;
+    }
+    
+    .checkbox-form {
+        width: 100%;
+    }
+    
+    .checkbox-group {
+        flex-direction: column;
+    }
+    
+    .radius-content {
+        margin: 30px 0;
+    }
+    
+    .radius-form {
+        width: 100%;
+    }
+    
+    .decorative-image {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .observation {
+        margin: 0 10px;
+    }
+    
+    .btn-submit {
+        margin: 20px 10px 10px 10px;
+    }
+    
+    .btn-large {
+        margin: 40px auto 20px auto;
+        text-align: center;
+    }
+    
+    .btn-large button {
+        width: 100%;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+    
+    #project-section {
+        height: auto;
+        padding: 20px;
+    }
+    
+    #project {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .developer {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    .project-text {
+        margin: 20px 0;
+    }
+    
+    #problem-section {
+        padding: 20px;
+    }
+    
+    .img-area,
+    .content-text {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .content-text {
+        margin-top: 20px;
+    }
+    
+    .box {
+        top: auto;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    
+    .box div {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-invertido {
+        width: 100%;
+        max-width: 159px;
+    }
+    
+    #goals-section {
+        padding: 20px;
+    }
+    
+    #goals h1 {
+        font-size: 32px;
+    }
+    
+    .box-obj {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box-obj div {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        padding: 40px 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-slogan img {
+        width: 150px;
+        margin-right: 0;
+    }
+    
+    .social-icons img {
+        margin-right: 10px;
+    }
+    
+    .copyright p {
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+/* Media Query para telas de 768px ou menores */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 5px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .menu-nav li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .header-line {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #form-section {
+        padding: 30px 5px;
+        background-position: center center;
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #registration {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #registration .top-right-img,
+    #registration .bottom-left-img {
+        position: static;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .registration-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .input-group input,
+    .select-group select {
+        width: 100%;
+    }
+
+    .checkbox-form {
+        width: 100%;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+    .radius-content {
+        margin: 20px 0;
+    }
+
+    .radius-form {
+        width: 100%;
+    }
+
+    .decorative-image {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .observation {
+        margin: 0 5px;
+    }
+
+    .btn-submit {
+        margin: 15px 5px 10px 5px;
+    }
+
+    .btn-large {
+        margin: 30px auto 20px auto;
+        text-align: center;
+    }
+
+    .btn-large button {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    #project-section {
+        height: auto;
+        padding: 15px;
+    }
+
+    #project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .project-text {
+        margin: 15px 0;
+    }
+
+    #problem-section {
+        padding: 15px;
+    }
+
+    .img-area,
+    .content-text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .content-text {
+        margin-top: 15px;
+    }
+
+    .box {
+        top: auto;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .box div {
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+
+    .btn-invertido {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    #goals-section {
+        padding: 15px;
+    }
+
+    #goals h1 {
+        font-size: 28px;
+    }
+
+    .box-obj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-obj div {
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 30px 5px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-slogan img {
+        width: 120px;
+        margin-right: 0;
+    }
+
+    .social-icons img {
+        margin-right: 5px;
+    }
+
+    .copyright p {
+        font-size: 7px;
+        text-align: center;
+    }
+}
+
+/* Media Query para telas de 576px ou menores */
+@media (max-width: 576px) {
+
+    .container {
+        padding: 0 3px;
+    }
+
+    nav {
+        padding: 8px 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+    }
+
+    .menu-nav li {
+        margin-bottom: 5px;
+    }
+
+    .header-line {
+        width: 100%;
+    }
+
+    #form-section {
+        padding: 20px 3px;
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #registration {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #registration .top-right-img,
+    #registration .bottom-left-img {
+        position: static;
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    .registration-form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    .input-group input,
+    .select-group select {
+        width: 100%;
+    }
+
+    .checkbox-form {
+        width: 100%;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+    .radius-content {
+        margin: 15px 0;
+    }
+
+    .radius-form {
+        width: 100%;
+    }
+
+    .decorative-image {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .observation {
+        margin: 0 3px;
+    }
+
+    .btn-submit {
+        margin: 10px 3px;
+    }
+
+    .btn-large {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .btn-large button {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #project-section {
+        padding: 10px;
+    }
+
+    #project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .project-text {
+        margin: 10px 0;
+    }
+
+    #problem-section {
+        padding: 10px;
+    }
+
+    .img-area,
+    .content-text {
+        width: 100%;
+    }
+
+    .content-text {
+        margin-top: 10px;
+    }
+
+    .box {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .box div {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .btn-invertido {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    #goals-section {
+        padding: 10px;
+    }
+
+    #goals h1 {
+        font-size: 24px;
+    }
+
+    .box-obj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-obj div {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 20px 3px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-slogan img {
+        width: 100px;
+        margin-right: 0;
+    }
+
+    .social-icons img {
+        margin-right: 3px;
+    }
+
+    .copyright p {
+        font-size: 6px;
+        text-align: center;
+    }
+}
